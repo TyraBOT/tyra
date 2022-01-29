@@ -74,3 +74,5 @@ A complete list of commands can be found in the [documentation](docs/commands/)
 * Feel free to [Fork](https://github.com/TyraBOT/tyra/fork) this repository, create a feature branch and submit a pull request
 * You can check all the planned features [here](https://github.com/saiteja-madha/discord-js-bot/projects) or make a request for one at our discord
 * You may not fork this repository for personal, commercial or other use under penalty of legal action.
+
+### Special thanks to [saiteja-madha](https://github.com/saiteja-madha/discord-js-bot/) for the base of bot
