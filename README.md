@@ -8,7 +8,7 @@
 >
 > Support Server: [Join Here](https://discord.gg/8HYCm3MpzR)
 >
-> Documentation URL: [Visit Here](https://tyra.ml/docs)
+> Old Documentation URL: [Visit Here](https://tyra.ml/docs)
 
 ### Pre-requisites
 
