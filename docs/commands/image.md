@@ -4,22 +4,10 @@ description: 32 commands
 
 # 🖼 Image
 
-### Filters
-
-* **Description**: add filter to the provided image
-* **Command Usage**: !{avaliable filters}
-* **Slash Usage**: `/filter <name>`&#x20;
-* **Cooldown**: 5 seconds
-* **Available Filters**:
-
-| blur   | burn     | gay   | greyscale |
-| ------ | -------- | ----- | --------- |
-| invert | pixelate | sepia | sharpen   |
-
 ### Generators
 
 * **Description**: image meme generator
-* **Command Usage**: !{available generator}
+* **Command Usage**: >{available generator}
 * **Slash Usage**: `/generator <name>`&#x20;
 * **Cooldown**: 5 seconds
 * **Available Generators**:

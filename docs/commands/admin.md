@@ -7,36 +7,36 @@ These commands can only be used by members who have **MANAGE\_SERVER** permissio
 ### Set Prefix
 
 * **Description**: Set bot prefix
-* **Usage**: `!setprefix <newPrefix>`
+* **Usage**: `>setprefix <newPrefix>`
 
 ### Automod Configuration
 
 |                                              |                                                                |
 | -------------------------------------------- | -------------------------------------------------------------- |
-| **!automodconfig status**                    | view configuration status                                      |
-| **!automodconfig strikes \<amount>**         | Set the maximum number of strikes before taking an action      |
-| **!automodconfig action \<kick\|mute\|ban>** | Set the action to be performed after receiving maximum strikes |
-| **!automodconfig debug \<on\|off>**          | turns on automod for messages sent by admins and moderators    |
+| **>automodconfig status**                    | view configuration status                                      |
+| **>automodconfig strikes \<amount>**         | Set the maximum number of strikes before taking an action      |
+| **>automodconfig action \<kick\|mute\|ban>** | Set the action to be performed after receiving maximum strikes |
+| **>automodconfig debug \<on\|off>**          | turns on automod for messages sent by admins and moderators    |
 
 {% hint style="info" %}
 By default, Auto moderation events are ignored for members who have the following permissions since they are assumed to be channel/server moderators
 
 **KICK\_MEMBERS**, **BAN\_MEMBERS**, **MANAGE\_GUILD**, **MANAGE\_MESSAGES**
 
-`!automodconfig debug on` disables this
+`>automodconfig debug on` disables this
 {% endhint %}
 
 ### Automod Events
 
 | Name                                   | Description                                                                 |
 | -------------------------------------- | --------------------------------------------------------------------------- |
-| **!automod antighostping \<on\|off>**  | Logs ghost mentions in your server (Requires `/modlog` channel to be setup) |
-| **!automod antiinvites \<on\|off>**    | Allow or disallow sending discord invites in message                        |
-| **!automod antilinks \<on\|off>**      | Allow or disallow sending links in message                                  |
-| **!automod antiscam \<on\|off>**       | Enable or disable antiscam detection                                        |
-| **!automod maxlines \<amount>**        | Sets maximum lines allowed per message                                      |
-| **!automod maxmentions \<amount>**     | Sets maximum user mentions allowed per message                              |
-| **!automod maxrolementions \<amount>** | Sets maximum role mentions allowed per message                              |
+| **>automod antighostping \<on\|off>**  | Logs ghost mentions in your server (Requires `/modlog` channel to be setup) |
+| **>automod antiinvites \<on\|off>**    | Allow or disallow sending discord invites in message                        |
+| **>automod antilinks \<on\|off>**      | Allow or disallow sending links in message                                  |
+| **>automod antiscam \<on\|off>**       | Enable or disable antiscam detection                                        |
+| **>automod maxlines \<amount>**        | Sets maximum lines allowed per message                                      |
+| **>automod maxmentions \<amount>**     | Sets maximum user mentions allowed per message                              |
+| **>automod maxrolementions \<amount>** | Sets maximum role mentions allowed per message                              |
 
 {% hint style="warning" %}
 Each time a member tries to break the automated rule, he/she **receives a strike**. After receiving the maximum number of strikes (default 5), the moderation action (default MUTE) is performed on them
@@ -45,7 +45,7 @@ Each time a member tries to break the automated rule, he/she **receives a strike
 ### Counter Channels
 
 * **Description: **setup counter channel in the guild
-* **Usage**: `!counter <counter_type> <name>`
+* **Usage**: `>counter <counter_type> <name>`
 * **Available counters** **types**
   * USERS: counts the total server member count (members + bots)
   * MEMBERS: counts the total member count
@@ -53,22 +53,22 @@ Each time a member tries to break the automated rule, he/she **receives a strike
 
 ### Max Warn
 
-* **!maxwarn limit \<amount>**: set max warnings a member can receive before taking an action
-* **!maxwarn action \<mute|kick|ban>**: set the action to be performed after receiving maximum warnings
+* **>maxwarn limit \<amount>**: set max warnings a member can receive before taking an action
+* **>maxwarn action \<mute|kick|ban>**: set the action to be performed after receiving maximum warnings
 
 ### Flag Translations
 
 _Enabling this feature will allow members to simply react to any message with a country flag emoji, translating that message content to regional language_
 
 * **Description**: configure flag translation in the server
-* **Usage**: `!flagtr <on|off>`
+* **Usage**: `>flagtr <on|off>`
 
 ![](../.gitbook/assets/image.png)
 
 ### Moderation Logging
 
 * **Description**: enable or disable moderation logs
-* **Usage**: `!modlog <channel|off>`
+* **Usage**: `>modlog <channel|off>`
 
 {% hint style="info" %}
 Moderation logging enable logging of all **moderation actions** and **automod events**
@@ -77,72 +77,72 @@ Moderation logging enable logging of all **moderation actions** and **automod ev
 ### Mute Setup
 
 * **Description**: setup muted role
-* **Usage**: `!mutesetup`
+* **Usage**: `>mutesetup`
 
 ### XP System
 
 * **Description**: configure the ranking system in the server
-* **Usage**: `!xpsystem <on|off>`
+* **Usage**: `>xpsystem <on|off>`
 
 ### Greeting
 
 {% tabs %}
 {% tab title="Welcome" %}
-**!welcome status \<on|off>**
+**>welcome status \<on|off>**
 
 * Enable or disable welcome message
 
-**!welcome channel <#channel>**
+**>welcome channel <#channel>**
 
 * configure channel where welcome messages must be sent
 
-**!welcome preview**
+**>welcome preview**
 
 * send a welcome preview
 
-**!welcome desc \<content>**
+**>welcome desc \<content>**
 
 * set welcome embed description
 
-**!welcome footer \<content>**
+**>welcome footer \<content>**
 
 * set welcome embed footer
 
-**!welcome thumbnail \<on|off>**
+**>welcome thumbnail \<on|off>**
 
 * enable or disable welcome message thumbnail
 
-**!welcome color <#hex>**
+**>welcome color <#hex>**
 
 * set welcome embed color
 {% endtab %}
 
 {% tab title="Farewell" %}
-**!farewell status \<on|off>**
+**>farewell status \<on|off>**
 
 * Enable or disable farewell message
 
-**!farewell channel <#channel>**
+**>farewell channel <#channel>**
 
 * configure channel where farewell messages must be sent
 
-**!farewell preview**
+**>farewell preview**
 
 * send a farewell preview
 
-**!farewell desc \<content>**
+**>farewell desc \<content>**
 
 * set farewell embed description
 
-**!farewell footer \<content>**
+**>farewell footer \<content>**
 
 * set farewell embed footer
 
-**!farewell thumbnail \<on|off>**
+**>farewell thumbnail \<on|off>**
 
 * enable or disable farewell message thumbnail
 
-**!farewell color <#hex>**
+**>farewell color <#hex>**
 
 * set farewell embed color
 {% endtab %}
@@ -165,25 +165,25 @@ Moderation logging enable logging of all **moderation actions** and **automod ev
 
 #### Create Reaction Role
 
-* **Usage**: !addrr <#channel> \<messageId> \<role> \<emote>
+* **Usage**: >addrr <#channel> \<messageId> \<role> \<emote>
 * **Description**: setup reaction role for the specified message
 
 #### Remove Reaction Roles
 
-* **Usage**: !removerr <#channel> \<messageId>
+* **Usage**: >removerr <#channel> \<messageId>
 * **Description**: remove configured reaction for the specified message
 
 ### Ticketing
 
 **Configuration**
 
-* **!ticket setup**: setup a new ticket message
-* **!ticket log <#channel>**: setup log channel for tickets
-* **!ticket limit \<amount>**: set maximum number of concurrent open tickets
-* **!ticket closeall**: close all open tickets
+* **>ticket setup**: setup a new ticket message
+* **>ticket log <#channel>**: setup log channel for tickets
+* **>ticket limit \<amount>**: set maximum number of concurrent open tickets
+* **>ticket closeall**: close all open tickets
 
 #### Ticket Channel Commands
 
-* **!ticket add \<userId|roleId>**: add user/role to the ticket
-* **!ticket remove \<userId|roleId>**: remove user/role from the ticket
+* **>ticket add \<userId|roleId>**: add user/role to the ticket
+* **>ticket remove \<userId|roleId>**: remove user/role from the ticket
 

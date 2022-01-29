@@ -1,8 +1,8 @@
- ✍ Guides | Setting up Strangebot for Replit!
+ ✍ Guides | Setting up Tyra for Replit!
 
 ### Intro
 
-Replit does not automatically update node to the latest version. **This is a problem as Strangebot runs on Discord.js V13
+Replit does not automatically update node to the latest version. **This is a problem as Tyra runs on Discord.js V13
 
 {% hint style="warning" %}
 Migration to V13 will take a while, But once it is done, it is done forever!
@@ -33,7 +33,7 @@ Migration to V13 will take a while, But once it is done, it is done forever!
 ### Main part of Guide
 * 6. Clone the git repository. 
 
-```git clone https://github.com/saiteja-madha/discord-js-bot.git```
+```git clone https://github.com/TyraBOT/tyra.git```
 
 * 7. Move the contents of the cloned folder into the main directory. **Do this for all files** [Like this](https://imgur.com/ki5ugSk)
 
@@ -53,6 +53,4 @@ Migration to V13 will take a while, But once it is done, it is done forever!
 Good job, Your bot is done. 
 Replit is a really good host for discord bots as it allows for powerful machinery with low costs and 24/7 uptime. IMO, The hacker plan is the best plan for hosting a discord bot for beginners or even serious developers. 
 
-This guide was created by mid (mid#0002). My bot is available at https://www.beemo.best.
-
-Join the Strangebot support server for any further help.
+Join the Tyra support server for any further help.

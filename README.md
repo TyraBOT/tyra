@@ -1,14 +1,14 @@
 # 🤖 About Me
 
-![Strange Bot](https://i.imgur.com/nFrS5wC.png)
+![Tyra](https://www.tyra.ml/assets/BotLogo.png)
 
-> An awesome multipurpose discord bot build using [discord.js v13](https://discord.js.org) with support for slash commands and context menus
+> An awesome multipurpose discord bot build using [discord.js v13](https://discord.js.org) with support for slash commands and context menus. Aims to replace them all.
 
-> Demo Bot: [Invite Here](https://discord.com/oauth2/authorize?client\_id=752922609733337190\&permissions=397602323830\&scope=bot%20applications.commands)
+> Bot: [Invite Here](https://discord.com/oauth2/authorize?client_id=884471321885556787&permissions=8&scope=bot%20applications.commands)
 >
-> Support Server: [Join Here](https://discord.gg/fE75UShbqB)
+> Support Server: [Join Here](https://discord.gg/8HYCm3MpzR)
 >
-> Documentation URL: [Visit Here](https://docs.strangebot.xyz)
+> Documentation URL: [Visit Here](https://tyra.ml/docs)
 
 ### Pre-requisites
 
@@ -21,8 +21,8 @@
 * Open the terminal and run the following commands
 
 ```
-git clone https://github.com/saiteja-madha/discord-js-bot.git
-cd discord-js-bot
+git clone https://github.com/TyraBOT/tyra.git
+cd tyra
 npm install
 ```
 
@@ -30,12 +30,16 @@ npm install
 * Rename `.env.example` to `.env` and fill the values
 * Optionally edit `config.js`
 * Type `npm run start` to start the bot
+<br/>
+
+* If you use Docker, type `docker build -t tyra .` for build
+* type `docker run -d tyra` for run
 
 If you need any additional help, make sure to read our guides [here](docs/additional/installation.md)
 
 ### Features
 
-Strange is a feature-rich discord bot with new features constantly being updated! Current features include
+Tyra is a feature-rich discord bot with new features constantly being updated! Current features include
 
 * **Auto-Moderation**: Power auto-moderation to keep your discord server clean
 * **Powerful Moderation with Logging**: Moderate and log every action you take
@@ -48,7 +52,7 @@ Strange is a feature-rich discord bot with new features constantly being updated
 
 ### Categories
 
-Strange has an extensive list of all useful commands (**more than 100**) which are categorized as follows
+Tyra has an extensive list of all useful commands (**more than 100**) which are categorized as follows
 
 * **Automod**: `antighostping`, `antiinvites`, `antilinks`, `antiscam`, `maxlines`, `maxmentions`, ...
 * **Admin**: `welcome`, `farewell`, `reaction-roles`, ...
@@ -66,6 +70,6 @@ A complete list of commands can be found in the [documentation](docs/commands/)
 
 ### 🤝 Contributing
 
-* Special thanks to [@Androzz](https://github.com/Androz2091/AtlantaBot) for the [dashboard](https://github.com/Androz2091/AtlantaBot) and his other cool discord bot projects
-* Feel free to [Fork](https://github.com/saiteja-madha/discord-js-bot/fork) this repository, create a feature branch and submit a pull request
+* Feel free to [Fork](https://github.com/TyraBOT/tyra/fork) this repository, create a feature branch and submit a pull request
 * You can check all the planned features [here](https://github.com/saiteja-madha/discord-js-bot/projects) or make a request for one at our discord
+* You may not fork this repository for personal, commercial or other use under penalty of legal action.

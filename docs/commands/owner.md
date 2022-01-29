@@ -6,4 +6,4 @@ description: 1 command
 
 | Command             | Slash     | Description        |
 | ------------------- | --------- | ------------------ |
-| **!eval \<script>** | **/eval** | Evaluates a script |
+| **>eval \<script>** | **/eval** | Evaluates a script |

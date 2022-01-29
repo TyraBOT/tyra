@@ -1,0 +1,13 @@
+FROM node:16
+
+# Create the tyra's directory
+RUN mkdir -p /usr/src/tyra
+WORKDIR /usr/src/tyra
+
+COPY package.json /usr/src/tyra
+RUN npm install
+
+COPY . /usr/src/tyra
+
+# Start the tyea.
+CMD ["node", "."]

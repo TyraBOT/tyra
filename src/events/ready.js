@@ -2,6 +2,7 @@ const { counterHandler, inviteHandler } = require("@src/handlers");
 const { cacheReactionRoles } = require("@schemas/Message");
 const { getSettings } = require("@schemas/Guild");
 const { updateCounterChannels } = require("@src/handlers/counter");
+const {version} = require('../../package.json')
 
 /**
  * @param {import('@src/structures').BotClient} client
@@ -15,7 +16,7 @@ module.exports = async (client) => {
 
   // Update Bot Presence
   updatePresence(client);
-  setInterval(() => updatePresence(client), 10 * 60 * 1000);
+  setInterval(() => updatePresence(client), 1 * 60 * 1000);
 
   // Register Interactions
   if (client.config.INTERACTIONS.SLASH || client.config.INTERACTIONS.CONTEXT) {
@@ -51,10 +52,22 @@ const updatePresence = (client) => {
   const members = guilds.map((g) => g.memberCount).reduce((partial_sum, a) => partial_sum + a, 0);
 
   client.user.setPresence({
-    status: "online",
+    status: "dnd",
     activities: [
       {
         name: `${members} members in ${guilds.size} servers`,
+        type: "WATCHING",
+      },
+      {
+        name: `version ${version}`,
+        type: "WATCHING",
+      },
+      {
+        name: ">help | [prefix]help",
+        type: "PLAYING",
+      },
+      {
+        name: "https://tyra.ml",
         type: "WATCHING",
       },
     ],
